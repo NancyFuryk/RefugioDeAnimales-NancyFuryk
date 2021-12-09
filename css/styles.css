@@ -33,14 +33,20 @@ header .navBar{
 nav.navBar-mobile{
     display: none;
 }
-.navBar .logo {
+.navbar .logo {
     width: 45px;
     height: 45px;
-    padding-right: 20px;
+  
 }
-.navBar .logo img{
+.navbar .logo img{
     width: 100%;
     height: auto;
+}
+button.navbar-toggler{
+    margin-top: 0;
+}
+a.nav-link{
+    color: white !important;
 }
 ul.menuContainer {
     display: flex;
@@ -411,12 +417,20 @@ input.enviar:hover{
     display: block;
     margin: 0 auto;
     text-align: center;
-    width: 25%;
+    width: 38%;
     margin-top: 47px;
 }
 .card-product a:hover{
     background-color: #7646F0;
     cursor: pointer;
+}
+.paginado{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.paginado ul a{
+    color: #7646F0;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 768px){
     .conteiner-product {
