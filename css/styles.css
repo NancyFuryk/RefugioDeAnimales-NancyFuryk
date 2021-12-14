@@ -117,6 +117,9 @@ section h1{
     width: 100%;
     height: auto;
 }
+.conteiner-img button:hover{
+    background-color: transparent;
+}
 .conteiner-text{
     width: 300px;
 }
