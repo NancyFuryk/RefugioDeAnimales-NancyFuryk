@@ -1,0 +1,19 @@
+@import "./variables/colors";
+@import "./variables/fonts";
+
+/* Globals */
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+    margin: 0 auto;
+}
+p{
+    font-family: 'Roboto';
+}
+
+@import "header";
+@import "section";
+@import "footer";
+@import "mediaqueries";
