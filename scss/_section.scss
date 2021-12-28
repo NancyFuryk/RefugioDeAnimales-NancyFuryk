@@ -5,12 +5,10 @@
         display: flex;
         justify-content: center;
         .conteiner-img {
-            width: 600px;
-            height: auto;
+            @include size(600px, auto);
             margin-right: 20px;
             img{
-                width: 100%;
-                height: auto;
+                @include size(100%, auto);
             }
             button{
                 &:hover{
@@ -29,7 +27,7 @@
         }
     }
     .conteiner-text{
-        width: 300px;
+        @include size(300px, auto);
     }
 }
 section{
@@ -40,6 +38,20 @@ section{
         margin-bottom: 30px;
         margin-top: 30px;
         color: black;
+    }
+    /* Extend */
+    .title {
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Lato';
+        margin-bottom: 30px;
+        margin-top: 30px;
+        color: black;
+    }
+
+    .title-section {
+        @extend .title;
+      
     }
 }
 /*ubicaciones*/
@@ -216,6 +228,7 @@ form{
                 margin-bottom: 12px;
             }
             a{
+                @include size(38%, 45px);
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -229,8 +242,6 @@ form{
                 border-radius: 6px;
                 margin: 0 auto;
                 text-align: center;
-                width: 38%;
-                height: 45px;
                 margin-top: 47px;
                 &:hover{
                     background-color: $violethover;
