@@ -8,11 +8,9 @@ header{
         align-items: center;
         width: 100%;
         .logo {
-            width: 45px;
-            height: 45px;
+            @include size(45px, 45px);
             img{
-                width: 100%;
-                height: auto;
+                @include size(100%, auto);
             }
         }
         ul.navbar-nav{

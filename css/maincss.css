@@ -81,15 +81,25 @@ header {
     .section-home .containerDos .conteiner-video {
       margin-left: 20px; }
   .section-home .conteiner-text {
-    width: 300px; }
+    width: 300px;
+    height: auto; }
 
-section h1 {
-  text-align: center;
-  font-size: 40px;
-  font-family: 'Lato';
-  margin-bottom: 30px;
-  margin-top: 30px;
-  color: black; }
+section {
+  /* Extend */ }
+  section h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Lato';
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: black; }
+  section .title, section .title-section {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Lato';
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: black; }
 
 /*ubicaciones*/
 .ubicacion {
@@ -210,7 +220,7 @@ form {
       background-color: #7646F0; }
 
 /*Shop*/
-.shop .title {
+.shop .title, .shop section .title-section, section .shop .title-section {
   text-align: center;
   font-size: 40px;
   font-family: 'Lato';
@@ -238,6 +248,8 @@ form {
       margin-top: 35px;
       margin-bottom: 12px; }
     .shop .conteiner-product .card-product a {
+      width: 38%;
+      height: 45px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -251,8 +263,6 @@ form {
       border-radius: 6px;
       margin: 0 auto;
       text-align: center;
-      width: 38%;
-      height: 45px;
       margin-top: 47px; }
       .shop .conteiner-product .card-product a:hover {
         background-color: #7646F0;
@@ -275,16 +285,38 @@ footer {
   footer .redes {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     width: 220px;
     margin: 0 auto; }
-    footer .redes img {
+    footer .redes div {
       width: 30px;
-      height: auto; }
+      height: auto;
+      border-radius: 10px; }
+      footer .redes div img {
+        width: 100%;
+        height: auto; }
+    footer .redes #youtube {
+      height: 22px; }
+    footer .redes .icon-facebook {
+      background: #3B5998; }
+    footer .redes .icon-youtube {
+      background: #d71e18; }
+    footer .redes .icon-instagram {
+      background: #E1306C; }
   footer .copy {
     margin: 0 auto;
     color: white;
     font-size: 12px;
     margin-top: 15px; }
+
+/* Extend */
+.boton, .boton-primario {
+  border: 1px solid #339dc5;
+  background-color: #339dc5;
+  padding: 10px 20px; }
+
+.boton-primario {
+  color: black; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /*Header*/
